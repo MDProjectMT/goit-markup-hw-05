@@ -26,15 +26,12 @@ img {
     max-width: 100%;
     height: auto;
 }
-
 button {
     cursor: pointer;
     border: none;
     border-radius: 4px;
 }
-
-ul,
-ol {
+ul {
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -83,7 +80,6 @@ li {
     color: var(--header-color);
     font-size: 12px;
 }
-
 .btn-p {
     font-weight: 500;
     font-size: 16px;
@@ -119,7 +115,7 @@ li {
     color: var(--white-color);
     background-color: var(--focus-hover);
     transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-p:hover, .btn-p:focus {
@@ -129,8 +125,8 @@ li {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 2px 1px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
-        transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-first-p {
     background-color: var(--color-text);
@@ -143,15 +139,15 @@ li {
 }
 .link {
     text-decoration: none;
+    position: relative;
 }
 .link-c {
     text-decoration: none;
-    
 }
 a.link:hover, a.link:focus {
     color: var(--focus-hover);
     transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 } 
 .linkcolor {
@@ -168,6 +164,7 @@ a.link:hover, a.link:focus {
 .logocolor {
     color: var(--header-color);
 }
+
 .bgd {
     background-color: var(--header-color);
     color: var(--color-white);
@@ -192,7 +189,17 @@ a.link:hover, a.link:focus {
     text-transform: uppercase;
     color: var(--color-text);
 }
-
+.link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--focus-hover);
+    border-radius: 2px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .list-item {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -251,10 +258,8 @@ a.link:hover, a.link:focus {
     padding: 24px 0;
 }
 .list-item:hover, .list-item:focus {
-
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .list-goals {
     width: calc((100%-72px)/4)
@@ -290,10 +295,10 @@ a.link:hover, a.link:focus {
     justify-content: space-between;
 }
 .container-flex-two {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .block-footer {
     display: inline-block;
@@ -332,7 +337,6 @@ a.link:hover, a.link:focus {
     justify-content: center;
     align-items: center;
     margin: 0px 90px 120px 90px;
-
 }
 .flex-three {
     display: flex;
@@ -348,7 +352,6 @@ a.link:hover, a.link:focus {
     align-items: center;
     width: auto;
     padding-top: 0;
-
 }
 .flex-img {
     display: flex;
@@ -376,7 +379,6 @@ a.link:hover, a.link:focus {
     margin: 0px;
     background-color: var(--color-background);
     gap: 24px;
-
 }
 .flex-person {
     display: flex;
@@ -406,7 +408,6 @@ a.link:hover, a.link:focus {
     margin-bottom: 72px;
     gap: 24px;
 }
-
 .flex-li:last-child {
     margin-right: 0px;
 }
@@ -447,14 +448,14 @@ a.link:hover, a.link:focus {
 .div-app:hover, .div-app:focus {
     border-color: var(--color-background);
     transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-hf:hover, .link-hf:focus {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16),
                 0px 1px 6px rgba(46, 47, 66, 0.08);
-                transition-duration: 250ms;
-                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-p {
     padding: 96px 0 120px 0;
@@ -471,9 +472,7 @@ a.link:hover, a.link:focus {
 .svg-atut {
     display: block;
     margin: auto;
-
 }
-
 .flex-platform {
     display: flex;
     justify-content: center;
@@ -502,7 +501,7 @@ a.link:hover, a.link:focus {
     background-color: var(--focus-hover);
     color: var(--focus-hover);
     transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-platform {
     fill: var(--color-background)
@@ -528,7 +527,7 @@ a.link:hover, a.link:focus {
     border-color: var(--focus-hover);
     color: var(--focus-hover);
     transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-customer {
     fill: currentColor;
@@ -536,7 +535,7 @@ a.link:hover, a.link:focus {
 .svg-customer:hover, .svg-customer:focus {
     fill: var(--focus-hover);
     transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flex-footer {
     display: flex;
@@ -548,28 +547,28 @@ a.link:hover, a.link:focus {
 .icons-footer {
     width: 100%;
     height: 100%;
-        background-color: var(--color-text);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-self: center;
-            width: 40px;
-                height: 40px;
+    background-color: var(--color-text);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 40px;
+    height: 40px;
 }
 .web-icon-f {
-        width: 100%;
-            height: 100%;
-            background-color: var(--color-text);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-text);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .web-icon-f:hover, .web-icon-f:focus {
     background-color: var(--footer-color);
     color: var(--footer-color);
     transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .platforms-footer {
     display: flex;
@@ -577,4 +576,7 @@ a.link:hover, a.link:focus {
 }
 .svg-footer {
     fill: var(--color-background);
+}
+.relative {
+    position: relative;
 }
