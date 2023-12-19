@@ -275,7 +275,7 @@ a.link:hover, a.link:focus {
 }
 .container-flex-one {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .container-flex-two {
         display: flex;
