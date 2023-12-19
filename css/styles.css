@@ -118,6 +118,8 @@ li {
 .btn-first:hover, .btn-first:focus {
     color: var(--white-color);
     background-color: var(--focus-hover);
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-p:hover, .btn-p:focus {
@@ -127,6 +129,8 @@ li {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 2px 1px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
+        transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-first-p {
     background-color: var(--color-text);
@@ -146,6 +150,8 @@ li {
 }
 a.link:hover, a.link:focus {
     color: var(--focus-hover);
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 } 
 .linkcolor {
@@ -243,6 +249,12 @@ a.link:hover, a.link:focus {
 }
 .list-contact {
     padding: 24px 0;
+}
+.list-item:hover, .list-item:focus {
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .list-goals {
     width: calc((100%-72px)/4)
@@ -434,11 +446,15 @@ a.link:hover, a.link:focus {
 }
 .div-app:hover, .div-app:focus {
     border-color: var(--color-background);
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-hf:hover, .link-hf:focus {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16),
                 0px 1px 6px rgba(46, 47, 66, 0.08);
+                transition-duration: 250ms;
+                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-p {
     padding: 96px 0 120px 0;
@@ -485,6 +501,8 @@ a.link:hover, a.link:focus {
 .web-icon:hover, .web-icon:focus {
     background-color: var(--focus-hover);
     color: var(--focus-hover);
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-platform {
     fill: var(--color-background)
@@ -509,12 +527,16 @@ a.link:hover, a.link:focus {
 .web-customers:hover, .web-customers:focus{
     border-color: var(--focus-hover);
     color: var(--focus-hover);
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-customer {
     fill: currentColor;
 }
 .svg-customer:hover, .svg-customer:focus {
     fill: var(--focus-hover);
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flex-footer {
     display: flex;
@@ -546,6 +568,8 @@ a.link:hover, a.link:focus {
 .web-icon-f:hover, .web-icon-f:focus {
     background-color: var(--footer-color);
     color: var(--footer-color);
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .platforms-footer {
     display: flex;
