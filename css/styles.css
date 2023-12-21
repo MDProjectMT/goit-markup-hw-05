@@ -92,6 +92,8 @@ li {
     border-radius: 4px;
     background-color: var(--color-background);
     color: var(--color-text);
+        transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-first {
     display: block;
@@ -110,12 +112,13 @@ li {
     color: var(--white-color);
     cursor: pointer;
     font-family: "Roboto", sans-serif;
+        transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-first:hover, .btn-first:focus {
     color: var(--white-color);
     background-color: var(--focus-hover);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .btn-p:hover, .btn-p:focus {
@@ -125,8 +128,7 @@ li {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 2px 1px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .btn-first-p {
     background-color: var(--color-text);
@@ -140,15 +142,13 @@ li {
 .link {
     text-decoration: none;
     position: relative;
+    color: var(--focus-hover);
+        transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-c {
-    text-decoration: none;
-}
+
 .link:hover, .link:focus {
     color: var(--focus-hover);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 } 
 .linkcolor {
     color: var(--body-color);
@@ -157,6 +157,8 @@ li {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0px;
+    display: block;
 }
 .contact {
     font-style: normal;
@@ -181,7 +183,6 @@ li {
 }
 .logo {
     padding-right: 76px;
-    paddi
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -200,10 +201,10 @@ li {
     background-color: var(--focus-hover);
     border-bottom: 4px solid var(--focus-hover);
     border-radius: 2px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .list-item {
+    display: block;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -211,6 +212,8 @@ li {
     letter-spacing: 0.02em;
     color: var(--header-color);
     padding: 24px 0;
+        transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-item-f {
     font-family: 'Roboto', sans-serif;
@@ -220,6 +223,8 @@ li {
     letter-spacing: 0.02em;
     color: var(--white-color);
     margin-bottom: 16px;
+        transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hdr {
     font-weight: 500;
@@ -257,12 +262,11 @@ li {
     background-color: var(--white-color);
     text-align: center;
 }
-.list-contact {
+/* .list-contact {
     padding: 24px 0;
-}
+} */
 .list-item:hover, .list-item:focus {
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .list-goals {
     width: calc((100%-72px)/4)
@@ -447,18 +451,18 @@ li {
     padding: 32px 16px;
     border: 1px solid var(--button-color);
     border-top: none;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .div-app:hover, .div-app:focus {
     border-color: var(--color-background);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .link-hf:hover, .link-hf:focus {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16),
                 0px 1px 6px rgba(46, 47, 66, 0.08);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .section-p {
     padding: 96px 0 120px 0;
@@ -499,12 +503,13 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .web-icon:hover, .web-icon:focus {
     background-color: var(--focus-hover);
     color: var(--focus-hover);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .svg-platform {
     fill: var(--color-background)
@@ -525,20 +530,21 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+        transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .web-customers:hover, .web-customers:focus{
     border-color: var(--focus-hover);
     color: var(--focus-hover);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .svg-customer {
     fill: currentColor;
+        transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-customer:hover, .svg-customer:focus {
     fill: var(--focus-hover);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flex-footer {
     display: flex;
@@ -566,12 +572,13 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+        transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .web-icon-f:hover, .web-icon-f:focus {
     background-color: var(--footer-color);
     color: var(--footer-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .platforms-footer {
     display: flex;
@@ -582,4 +589,38 @@ li {
 }
 .relative {
     position: relative;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 528px;
+    height: 581px;
+    background-color: var(--white-color);
+}
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
 }
