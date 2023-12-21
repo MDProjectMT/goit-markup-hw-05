@@ -144,7 +144,7 @@ li {
 .link-c {
     text-decoration: none;
 }
-a.link:hover, a.link:focus {
+.link:hover, .link:focus {
     color: var(--focus-hover);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -181,6 +181,7 @@ a.link:hover, a.link:focus {
 }
 .logo {
     padding-right: 76px;
+    paddi
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -189,13 +190,15 @@ a.link:hover, a.link:focus {
     text-transform: uppercase;
     color: var(--color-text);
 }
-.link::after {
+.list-item:hover::after {
     content: '';
     position: absolute;
     left: 0;
+    right: 0;
     bottom: -1px;
     height: 4px;
     background-color: var(--focus-hover);
+    border-bottom: 4px solid var(--focus-hover);
     border-radius: 2px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
