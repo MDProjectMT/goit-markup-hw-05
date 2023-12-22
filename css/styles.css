@@ -147,7 +147,7 @@ li {
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link:hover, .link:focus {
+.link:hover, .link:focus, .link.active {
     color: var(--focus-hover);
 } 
 .linkcolor {
@@ -191,7 +191,7 @@ li {
     text-transform: uppercase;
     color: var(--color-text);
 }
-.list-item:hover::after {
+.list-item:hover::after, .list-item.active::after {
     content: '';
     position: absolute;
     left: 0;
