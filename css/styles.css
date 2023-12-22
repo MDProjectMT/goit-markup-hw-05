@@ -525,7 +525,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .web-customers:hover, .web-customers:focus{
     border-color: var(--focus-hover);
